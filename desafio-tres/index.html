@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='PT'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Desafio 3</title>
+
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+	<link href="style.css" rel="stylesheet">
+ 	
+	<link href="all.css" type="text/css" rel="stylesheet"> 
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="form-group">
+			<select id="select-film" class="form-control custom-select">
+				<option value="0" disabled selected>Selecione o filme</option>
+				<option value="filmeum">O Poderoso Chefão(1972)</option>
+				<option value="filmedois">Gravidade(2010)</option>
+				<option value="filmetres">De Volta para o Futuro(1985)</option>
+				<option value="filmequatro">Pulp Fiction(1994)</option>
+				<option value="filmecinco">Clube da Luta(1999)</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Avalie o filme"/>
+		</div>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Avaliação de Filmes</th>
+					<th>Rating</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="filmeum">
+					<td>O Poderoso Chefão(1972)</td>
+					<td>
+						<div class="stars-outer">
+							<div class="stars-inner"></div>
+						</div>
+						<span class="number-rating"></span>
+					</td>					
+				</tr>
+				<tr class="filmedois">
+					<td>Gravidade(2010)</td>
+					<td>
+						<div class="stars-outer">
+							<div class="stars-inner"></div>
+						</div>
+						<span class="number-rating"></span>
+					</td>					
+				</tr>
+				<tr class="filmetres">
+					<td>De Volta para o Futuro(1985)</td>
+					<td>
+						<div class="stars-outer">
+							<div class="stars-inner"></div>
+						</div>
+						<span class="number-rating"></span>
+					</td>					
+				</tr>
+				<tr class="filmequatro">
+					<td>Pulp Fiction(1994)</td>
+					<td>
+						<div class="stars-outer">
+							<div class="stars-inner"></div>
+						</div>
+						<span class="number-rating"></span>
+					</td>					
+				</tr>
+				<tr class="filmecinco">
+					<td>Clube da Luta(1999)</td>
+					<td>
+						<div class="stars-outer">
+							<div class="stars-inner"></div>
+						</div>
+						<span class="number-rating"></span>
+					</td>					
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+ 	<script type="text/javascript" src="script.js"></script>
+ 	
+</body>
+</html>
