@@ -8,7 +8,10 @@
 body {
     background-color: #182222!important;
     padding-top: 60px;
+    padding-left: 0px;
+    padding-right:0px;
     width:100%;
+    font-family: proxima-nova;
 }
 nav { 
     background-color: #223131;
@@ -69,6 +72,10 @@ i {
 
 .profile {
     padding-right: 0px;
+    font-size: 15px;
+}
+.profile img {
+    margin-right: 0px;
 }
 
 .navbar.sidebar-open ul {
@@ -109,13 +116,19 @@ i {
     scroll-margin-right: 50px;
     width: 300px;
     height: 250px;
-    margin: 20px;
+    margin: 0px;
     background: #223131 0% 0% no-repeat padding-box;
     box-shadow: 40px -17px 26px #00000000;
     border-radius: 6px;
     opacity: 1;
 }
 
+.slider {
+    width: 200%;
+}
+.row {
+    margin-left: 10px;
+}
 .card-body {
     height: 300px;
     box-shadow: 0px -10px 10px #223131;
@@ -144,9 +157,46 @@ i {
 .list-titles img {
     min-width: 160px;
 }
+.row-equal>div[class*='col-']{
+    display: flex;
+    flex: 1 0 auto;
+}
+.row-equal .car{
+    width: 100%;
+}
+.setas {
+    width:30px;
+    margin-right: 5px;
+    margin-left: 10px;
+    padding-left:20px;
+    color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0, 0);
+
+}
+.setas:hover {
+    width:30px;
+    margin-right:5px;
+    margin-left: 10px;
+    padding-left:20px;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+}
+.carousel-inner>.row-equal.active,
+.carousel-inner>.row-equal.next,
+.carousel-inner>.row-equal.prev{
+    display: flex;
+}
+.carousel-inner>.row-equal.left,
+.carousel-inner>.row-equal.right{
+    opacity: 0.5;
+    display: flex;
+}
 h2 {
     color: white;
     margin: 50px;
+    letter-spacing: 0.7px;
+    font-weight: bold;
+    font-size:20px;
     font-family: proxima-nova;
 }
 h3 {
@@ -157,21 +207,25 @@ h3 {
     color: #FFFFFF;
     opacity: 1;
 }
-h4 {
-    margin-top: 0px;
-    padding-top: 0px;
-    font-family: proxima-nova;
-    font-size: 20px;
-}
+
 
 .texto-principal p#chamada {
-    font-family: proximo-novo;
+    font-family: proxima-nova;
     color: #fff;
     letter-spacing: 1.5px;
 }
+.rodape img {
+    height: 30px;
+}
 
 footer {
-    color: #999898;
+    width:800px;
+    height: 70px;
+    margin-top: 150px;
+    color:#456060;
+    margin-left: -100px;
+    padding:20px;
+    background-color: #223131;
 }
 .title-item {
     position: relative;
@@ -180,7 +234,10 @@ footer {
 .title-item img {
     width: 100%;
 }
-
+.carousel-indicators{
+    margin: 0px;
+    padding:0px;
+}
 .title-item .items {
     position: absolute;
     bottom: 0;
